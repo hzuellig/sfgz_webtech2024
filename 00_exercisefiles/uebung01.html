@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            min-height:200vh;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    window.onscroll = function() {
+        var scroll = window.scrollY;
+        console.log(scroll);
+        if(scroll > 100){
+            document.body.style.backgroundColor = "red";
+        }else{
+            document.body.style.backgroundColor = "white";
+        }
+    };
+</script>
+</html>
