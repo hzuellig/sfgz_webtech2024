@@ -1,0 +1,19 @@
+body {
+    min-height: 200vh;
+}
+
+h1 {
+    color: red;
+}
+
+p{
+    font-size: 20px;
+}
+
+.blue30{
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+#poetry{
+    width: 50%;
+}

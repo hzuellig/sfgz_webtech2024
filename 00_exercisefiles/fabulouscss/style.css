@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto:wght@100&display=swap');
+
+@font-face {
+    font-family: "Linear Regular";
+    src: url("Lineal-Regular.woff") format("woff2");
+}
+
+
 /*-----Tags----*/
 body{
-    
+    font-family: "Linear Regular", system-ui;
 }
 
 h1{
