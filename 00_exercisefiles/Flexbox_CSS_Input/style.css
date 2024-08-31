@@ -2,6 +2,8 @@
 
 body {
   margin: 5% 15% 5% 15%;
+  margin-top: 5%;
+  margin-right: 15%;
   font-family: "Inter", sans-serif;
   background-color: #211031;
 }
@@ -40,6 +42,9 @@ h3 {
   color: #fca504;
   font-weight: 700;
   font-size: 1rem;
+  flex-basis: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 /* ------- obenstehendes CSS ignorieren, dient nur zum Styling der Übung ------- */
@@ -56,7 +61,13 @@ gap: Abstand in gewünschter Einheit (px, rem, em, %, etc.)
 */
 
 .parent {
-  
+  /*height:800px;*/
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around ;
+  align-items: center;
+  flex-wrap:wrap;
+  gap:20px
 }
 
 .item-1 {
