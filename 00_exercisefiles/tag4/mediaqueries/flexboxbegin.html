@@ -52,7 +52,7 @@
             justify-content: start;
         }
 
-       
+
 
         /*-----schrift-----*/
         .big {
@@ -68,9 +68,24 @@
         /*---media queries---*/
         @media (max-width: 768px) {
 
-            
 
-            
+            #wrapper {
+                flex-direction: column;
+            }
+
+            .big {
+                font-size: 2rem;
+
+            }
+
+            .rotate {
+                writing-mode: horizontal-tb;
+                transform: rotate(0deg);
+                display:flex;
+                flex-direction: column-reverse;
+
+            }
+
         }
     </style>
 </head>
@@ -93,9 +108,9 @@
         </div>
         <div class="col1 flexrowstart">
             <div class="rotate big">
-                
-                <span>Truninger</span><br/>
-                <span class="red">Kunsthaus<br/>
+
+                <span >Truninger</span><br />
+                <span class="red ">Kunsthaus<br />
                     Zürich</span>
 
             </div>

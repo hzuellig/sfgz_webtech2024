@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyer2 Breakpoint</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900&family=Roboto:wght@400;900&display=swap');
+
+    /*-----default desktop styles-----*/
+
+    body {
+        margin: 0;
+        background-color: #693c37;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .rahmen {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+
+   
+
+    .titel-item {
+        font-size: clamp(50px, 15vw, 25vw);
+        color: #382924;
+        margin: 0;
+        text-align: center;
+       
+       /* transition: letter-spacing 0.3s ease-in-out;
+        letter-spacing: clamp(2px, 5vw, 10vw);*/
+
+    }
+
+    .rothko {
+        transform: translate(0, 10vh);
+        z-index: 0;
+    }
+
+    .chilida {
+        transform: translate(0, -10vh);
+        z-index: 0;
+    }
+
+    .red-box {
+        background-color: #BC312E;
+        color: #382924;
+        padding: 20px;
+        width: calc(100%-40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 80vh;
+        box-sizing: border-box;
+        text-align: left;
+         z-index: 2; 
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+
+    }
+
+
+    .informationen {
+        color: #382924;
+        font-size: clamp(16px, 2vw, 4vw);
+        line-height: 1.5;
+        text-align: right;
+
+       
+    }
+
+    p {
+        margin: 0;
+    }
+
+
+    /*---media queries---*/
+    @media (max-width: 834px) {
+        .rahmen {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .red-box {
+           
+            width: 50vh;
+            height: 50vh;
+           
+        }
+
+        .informationen {
+            color: #382924;
+            font-size: clamp(16px, 2vw, 4vw);
+            line-height: 1.5;
+            
+        }
+
+        .titel-item {
+           
+            text-align: center; 
+            writing-mode: vertical-lr;
+            height:100%;
+          
+        }
+
+        .rothko {
+            transform: rotate(180deg) translate(-5vw, 0vh);
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .chilida {
+            transform: rotate(180deg) translate(5vw, 0vh);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <div class="rahmen">
+        <div class="titel-item "><div class="rothko"><span>Rothko</span></div></div>
+        <div class="red-box">
+            <p class="informationen"><strong>3. III - 8. IV<br>Kunsthalle<br>Basel<br>Mark<br> Rothko<br>Eduardo
+                    <br>Chillida</strong></p>
+        </div>
+        <div class="titel-item "><div class="chilida"><span>Chillida</span></div></div>
+    </div>
+
+
+</body>
+
+</html>
