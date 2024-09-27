@@ -33,8 +33,13 @@
         }
 
         /*----Transformationen-----*/
-        .verschieben {
-            transform: translate(100px, 200px);
+        .verschieben{
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        .verschieben:hover{
+            transform: translate(100px, 200px);     
         }
 
         .rotieren {
@@ -42,10 +47,27 @@
         }
 
         .mehrere {
-           
+
             transform: rotate(45deg) scale(0.8);
-           
+
         }
+
+        /*----Test Transition--------*/
+       /* .transformed {
+            height: 500px;
+            background-color: lightblue;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(.11,1.31,1,-0.41);
+            transition-delay: 0.5s;
+
+        }
+
+        .transformed:hover {
+            
+            background-color: black;
+            transform: translate(100px, 200px);
+        }*/
     </style>
 </head>
 
